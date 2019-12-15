@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <title>CODIFY</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="index.html">CODIFY</a>
+        <div class="menu">
+            <a href="#">Dashboard</a>
+            <a href="#">Contact Us</a>
+            <a href="#">FAQs</a>
+            <a href="#">Login_IN</a>
+        </div>
+    </header>
+
+    <div class="main2">
+        <p class="hdes">You can fear this a little...Coz its CSS</p>
+        <div class="form2">
+            <bold>//</bold>need some info complete your dashboard <br> .yourself
+            <bold>{</bold>
+            <br> hobby: <input type="text" name="hobby" placeholder="Just one not multiple">;
+            <br> number: <input type="number" name="number" placeholder="What is your dial number">;
+            <br> email: <input type="email" name="email" placeholder="Its quite simple i think">;
+            <br> designation: <input type="text" name="designation" placeholder="Better than being free">;
+            <br>
+            <bold>}</bold>
+            <br> <button onclick="csss()">Done?</button>
+        </div>
+        <p id="cssexp" class="hdes"></p>
+
+        <p class="hdes">Well coming to the next topic. You have to fear from your soul. Just kidding. Coz u need some cool brain to write JAVASCRIPT.</p>
+        <div class="form2">
+            &lt;script&gt;<br> &nbsp;&nbsp;function updateAge(){<br> &nbsp;&nbsp;&nbsp;&nbsp; var myage = <input type="number" name="age" id="age" placeholder="How old are
+                    you?">; <br> &nbsp;&nbsp;&nbsp;&nbsp; document.write(myage); <br> }
+            <br> updateAge();
+            <br> &lt;/script&gt;
+            <br> <button onclick="jss()">Done?</button>
+        </div>
+        <p id="jsage" class="hdes"></p>
+        <p id="jsexp" class="hdes"></p>
+    </div>
+
+
+
+    <script>
+        function csss() {
+            document.getElementById("cssexp").innerHTML = "CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work. It can control the layout of multiple web pages all at once. <br>Simple is'nt it? Same way how you have filled this above columns. In the same way in css, we have to declare a certain value to a certain property for a certain selector. <br> In the above block, 'yourself' is a selector, and hobby, number, email && designation are different properties with some specific values that you want to give. Simple.";
+        }
+
+        function jss() {
+            var x = document.getElementById("age").value;
+            if (x === "") {
+                x = "an Introvert";
+            }
+            document.getElementById("jsage").innerHTML = "Nice to know that You are " + x + ". I am 18 By the way. <br>If talking about above code, it simply prints your age which you have given input.";
+            document.getElementById("jsexp").innerHTML = "JavaScript, often abbreviated as JS, is a high-level, just-in-time compiled, object-oriented programming language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions. <br>Well don't focus on this dynamic definition. Everything in JavaScript is matter of logic that i am pretty sure you have, otherwise you wont have came this far. LOL<br>";
+            document.getElementById("jsexp").innerHTML += "<br><br>Had nice time working with you guys. Have my business_card to be in touch.<br><br>";
+            var el = document.getElementById("jsexp");
+            el.innerHTML += "<img src=\"business_card.jpg\" >";
+
+        }
+    </script>
+</body>
+
+</html>
